@@ -1,0 +1,29 @@
+.meme--container {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: auto auto auto;
+
+	padding: 36px;
+	gap: 15px;
+}
+
+.meme--input {
+	padding: 10px;
+}
+
+.meme--button {
+	grid-column: span 2;
+
+	background: linear-gradient(90deg, #711F8D 1%, #A818DA 100%);
+	padding: 10px;
+	color: white;
+	border: none;
+
+	cursor: pointer;
+}
+
+.meme--image {
+	width: 100%;
+	grid-column: span 2;
+	margin: 18px 0;
+}
