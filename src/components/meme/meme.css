@@ -1,4 +1,4 @@
-.meme--container {
+.main--container {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-template-rows: auto auto auto;
@@ -22,8 +22,47 @@
 	cursor: pointer;
 }
 
-.meme--image {
+.meme--container {
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
 	width: 100%;
 	grid-column: span 2;
 	margin: 18px 0;
+}
+
+.meme--image {
+	width: 100%;
+}
+
+.meme--text {
+	position: absolute;
+	width: 69%;
+	text-align: center;
+	text-transform: uppercase;
+	margin: 16px;
+	color: white;
+	font-size: 2rem;
+	letter-spacing: 1px;
+	text-shadow:
+		2px 2px 0 #000,
+		-2px -2px 0 #000,
+		2px -2px 0 #000,
+		-2px 2px 0 #000,
+		0 2px 0 #000,
+		2px 0 0 #000,
+		0 -2px 0 #000,
+		-2px 0 0 #000,
+		2px 2px 5px #000;
+}
+
+.top {
+	top: 0;
+}
+
+.bottom {
+	bottom: 0;
 }
